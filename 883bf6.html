@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Navbar UI</title>
+  <title>Simple Navbar UI with Footer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link id="heading-font-link" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link id="body-font-link" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -159,6 +159,101 @@
       </button>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-100 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=100&auto=format&fit=crop" alt="Logo" class="h-10 w-10 rounded-small object-cover">
+            <span class="font-heading font-bold text-xl text-white">BrandUI</span>
+          </div>
+          <p class="text-neutral-400 mb-6 max-w-sm">
+            Build beautiful, responsive interfaces with our modern UI components. Fast, accessible, and easy to customize for your next project.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i data-lucide="twitter" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i data-lucide="github" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i data-lucide="linkedin" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i data-lucide="facebook" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Column -->
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Product</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Features</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Documentation</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Changelog</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Press Kit</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Legal</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Cookie Policy</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Licenses</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">GDPR</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="border-t border-neutral-800 pt-8 mb-8">
+        <div class="max-w-md">
+          <h3 class="font-heading font-semibold text-white mb-2">Subscribe to our newsletter</h3>
+          <p class="text-neutral-400 mb-4">Get the latest updates, articles, and resources delivered to your inbox weekly.</p>
+          <form class="flex gap-2">
+            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2.5 bg-neutral-800 border border-neutral-700 rounded-small text-neutral-100 placeholder-neutral-500 focus:outline-none focus:border-primary-500 transition-colors">
+            <button type="submit" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-small font-medium transition-colors whitespace-nowrap">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-neutral-400 text-sm">
+          © 2024 BrandUI. All rights reserved.
+        </p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-neutral-400 hover:text-white transition-colors">Privacy</a>
+          <a href="#" class="text-neutral-400 hover:text-white transition-colors">Terms</a>
+          <a href="#" class="text-neutral-400 hover:text-white transition-colors">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     // Initialize Lucide icons
